@@ -1,0 +1,38 @@
+@use "../collection/colors" as *;
+@use "../collection/fonts" as *;
+
+.untouchable {
+  -webkit-touch-callout: none; /* iOS Safari */ /* Chrome/Safari/Opera */ /* Firefox */
+  user-select: none; /* Internet Explorer/Edge */
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overscroll-behavior: none;
+
+  background-image: linear-gradient(
+    180deg,
+    #24252f 0%,
+    #31313f 36.46%,
+    #242530 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
