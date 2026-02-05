@@ -7,8 +7,11 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@use "~/assets/styles/collection/colors.scss" as *;
-                    @use "~/assets/styles/collection/fonts.scss" as *;`,
+          additionalData: `
+          @use "~/assets/styles/collection/colors.scss" as *;
+          @use "~/assets/styles/collection/fonts.scss" as *;
+          @use "~/assets/styles/collection/mixins.scss" as *;
+        `,
         },
       },
     },
