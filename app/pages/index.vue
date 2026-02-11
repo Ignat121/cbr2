@@ -7,8 +7,6 @@
     <h1>Кейсы</h1>
     <GroupButtons class="cases__gr-bt" />
   </section>
-
-  <FormWebForm />
 </template>
 
 <style scoped lang="scss">
