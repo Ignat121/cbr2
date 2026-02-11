@@ -11,12 +11,12 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 35px;
+  height: 35px;
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 9px 4px;
 
   @include mobile {
     display: flex;
@@ -24,7 +24,7 @@
 
   &__line {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: $white;
     transition: 0.3s;
   }
