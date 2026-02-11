@@ -4,6 +4,7 @@
     <main class="base__main">
       <slot></slot>
     </main>
+    <TheFooter />
   </div>
 </template>
 

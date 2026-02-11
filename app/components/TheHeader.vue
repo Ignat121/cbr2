@@ -10,12 +10,7 @@
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
-
-    <button class="burger">
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-    </button>
+    <BurgerHeader />
   </div>
 </template>
 
@@ -44,33 +39,11 @@
       gap: 60px;
       list-style: none;
       color: $white;
+      text-decoration: none;
 
       @include mobile {
         display: none;
       }
-    }
-  }
-
-  .burger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-
-    @include mobile {
-      display: flex;
-    }
-
-    &__line {
-      width: 100%;
-      height: 3px;
-      background: $white;
-      transition: 0.3s;
     }
   }
 }
