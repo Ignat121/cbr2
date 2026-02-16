@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Card from "~/components/projects/Card.vue";
+</script>
+
 <template>
   <div class="main-bread">
     <Bread />
@@ -5,10 +9,22 @@
 
   <section class="container cases">
     <h1>Кейсы</h1>
-    <GroupButtons class="cases__gr-bt" />
+
+    <div class="cases__group">
+      <GroupButtons />
+    </div>
+
+    <div>
+      <Card />
+    </div>
   </section>
+
+  <div>
+    <FormWebForm />
+  </div>
 </template>
 
+<script setup lang="ts"></script>
 <style scoped lang="scss">
 .main-bread {
   margin-top: 65px;
@@ -24,7 +40,7 @@
     margin-bottom: 65px;
   }
 
-  &__gr-bt {
+  &__group {
     margin-bottom: 52px;
   }
 }
